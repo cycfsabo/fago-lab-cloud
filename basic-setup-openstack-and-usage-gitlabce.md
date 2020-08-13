@@ -114,6 +114,7 @@ ifconfig ens33 0
 nano /etc/netplan/01-netcfg.yaml
 ```
 - Sửa file 01-netcfg.yaml như sau:
+
 ![image](https://user-images.githubusercontent.com/41882267/90048676-090ef300-dcfe-11ea-9280-367bfe4092c1.png)
 
 - Mở trình duyệt, truy cập vào địa chỉ 172.16.41.128 (địa chỉ host OpenStack) và đăng nhập với username: admin và password: 123456. 
@@ -121,13 +122,19 @@ nano /etc/netplan/01-netcfg.yaml
 Chuyển qua project là admin.
 <br/>
 Để tạo private network cùng với subnet, truy cập theo Project > Network > Networks > Create Network và thiết lập như sau:
+
 ![image](https://user-images.githubusercontent.com/41882267/90049742-74a59000-dcff-11ea-8b84-9695f410807f.png)
+
 ![image](https://user-images.githubusercontent.com/41882267/90049825-9737a900-dcff-11ea-9d6f-f8b487ab2201.png)
+
 ![image](https://user-images.githubusercontent.com/41882267/90049851-a3236b00-dcff-11ea-8e99-a84e6eaeae5e.png)
 
 - Để tạo provider network cùng với subnet, truy cập theo Admin > Network > Networks > Create Network và thiết lập như sau:
+
 ![image](https://user-images.githubusercontent.com/41882267/90172304-029b7c80-ddcd-11ea-8ead-f50cf98e0218.png)
+
 ![image](https://user-images.githubusercontent.com/41882267/90050003-d0701900-dcff-11ea-904c-c5b8be161196.png)
+
 ![image](https://user-images.githubusercontent.com/41882267/90050015-d403a000-dcff-11ea-97bc-df086703cd4d.png)
 
 - Để tạo router, truy cập vào Project > Network > Routers > Create Router và thiết lập như sau:
@@ -150,12 +157,16 @@ Chuyển qua project là admin.
 
 - Để tạo Instance, vào Project > Compute > Instances > Launch Instance
 ![image](https://user-images.githubusercontent.com/41882267/90098694-04305a80-dd63-11ea-946a-916566d4fe25.png)
+
 ![image](https://user-images.githubusercontent.com/41882267/90098744-1f02cf00-dd63-11ea-9f93-c3bccad9f0fb.png)
 
 "test2" là flavor tự tạo có các giá trị phù hơp để instance có thể chạy Gitlab-CE
 ![image](https://user-images.githubusercontent.com/41882267/90098775-2b872780-dd63-11ea-9806-829fd85d10cb.png)
+
 ![image](https://user-images.githubusercontent.com/41882267/90098791-393cad00-dd63-11ea-8e63-0ac399aa5069.png)
+
 ![image](https://user-images.githubusercontent.com/41882267/90098935-96386300-dd63-11ea-82d9-689dc3dcf74e.png)
+
 ![image](https://user-images.githubusercontent.com/41882267/90098971-a3ede880-dd63-11ea-80c6-34cc6d1e7959.png)
 
 - Để instance có thể truy cập được từ network provider, cần phải gán cho nó 1 floating ip. Để gán floating ip cho một instance, ta làm như sau:
