@@ -166,12 +166,73 @@ ssh -i <path/to/key> ubuntu@floatingip
 ```
 ![image](https://user-images.githubusercontent.com/41882267/90132696-796a5280-dd98-11ea-93bc-f5f49bc4d4e7.png)
 
-- 
-![image](https://user-images.githubusercontent.com/41882267/90134089-d36c1780-dd9a-11ea-9dc2-3b02ef7ee8ef.png)
+- Update 
+```
+apt-get update
+```
+
+- Install ssh vaf postfix
+```
+apt-get install openssh-server postfix -y
+```
+![image](https://user-images.githubusercontent.com/41882267/90136771-e2ed5f80-dd9e-11ea-9095-9b69001fd89a.png)
+
+- Chọn OK:
 ![image](https://user-images.githubusercontent.com/41882267/90134157-ee3e8c00-dd9a-11ea-9477-c6dfaf54cc99.png)
+
+- Chọn Internet Site:
 ![image](https://user-images.githubusercontent.com/41882267/90134173-f39bd680-dd9a-11ea-87bc-555a14381368.png)
+
+- System mail name là www.labcloud.com:
 ![image](https://user-images.githubusercontent.com/41882267/90134195-fdbdd500-dd9a-11ea-85fd-4565123285b3.png)
+
+- Tải về package cài đặt gitlab-ce 10.5.7 bằng lệnh:
+```
+wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/ubuntu/xenial/gitlab-ce_10.5.7-ce.0_amd64.deb/download.deb
+```
 ![image](https://user-images.githubusercontent.com/41882267/90136315-2f846b00-dd9e-11ea-8b32-11280dec394b.png)
+
+- Cài đặt gitlab-ce bằng lệnh:
+```
+dpkg -i gitlab-ce_10.5.7-ce.0_amd64.deb
+```
 ![image](https://user-images.githubusercontent.com/41882267/90134241-129a6880-dd9b-11ea-81d3-aed853abf598.png)
+
+- Sửa file gitlab.rb bằng lệnh:
+```
+nano -c /etc/gitlab/gitlab.rb
+```
+Sửa dòng 13:
+<br/>
+![image](https://user-images.githubusercontent.com/41882267/90141081-d79d3280-dda4-11ea-8041-270c1b3d1903.png)
+Sửa dòng 451:
+<br/>
+![image](https://user-images.githubusercontent.com/41882267/90141137-ea176c00-dda4-11ea-8511-ad93701c1bf5.png)
+Sửa dòng 1085:
+<br/>
+![image](https://user-images.githubusercontent.com/41882267/90141237-10d5a280-dda5-11ea-9b6f-522b66389942.png)
+
+- Sau đó reconfig gitlab bằng lệnh:
+```
+gitlab-ctl reconfigure
+```
+![image](https://user-images.githubusercontent.com/41882267/90141449-55613e00-dda5-11ea-95bc-4d2f43470d65.png)
+
+- Nếu trong quá trình reconfig bị lỗi timeout thì có thể tiếp tục thực hiện lại reconfig để hệ thống xử lý những service còn lại. Để kiểm tra trạng thái các service, sử dụng lệnh:
+```
+gitlab-ctl status
+```
+![image](https://user-images.githubusercontent.com/41882267/90141983-05cf4200-dda6-11ea-9664-5b3833c86951.png)
+
+- Từ laptop, mở trình duyệt và nhập vào floating ip của instance. Lần đầu sẽ phải tạo lại password mới:
+![image](https://user-images.githubusercontent.com/41882267/90143020-4aa7a880-dda7-11ea-88f4-88b57d01defd.png)
+
+- Đăng nhập với username là root, password là password vừa tạo:
+![image](https://user-images.githubusercontent.com/41882267/90143168-7a56b080-dda7-11ea-9251-9e0d09484a4a.png)
+
+- Kết quả khi đăng nhập thành công:
+![image](https://user-images.githubusercontent.com/41882267/90143238-90647100-dda7-11ea-8598-b8086c4a16b0.png)
+
+### Hướng dẫn sử dụng cơ bản gitlab-ce:
 
 
