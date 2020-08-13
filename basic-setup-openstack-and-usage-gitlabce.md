@@ -4,7 +4,7 @@
 
 
 1. [Cài đặt OpenStack](#setup)
-1. [Hướng dẫn sử dụng cơ bản Gitlab-CE](#basic-usage)
+1. [Hướng dẫn sử dụng cơ bản Gitlab-CE](#basic-setup-and-usage-gitlabce)
 
 ## Cài đặt OpenStack <a name="setup"></a>
 
@@ -128,14 +128,17 @@ nano /etc/netplan/01-netcfg.yaml
 - Để thêm interface của private network vào router Lab vừa tạo, chọn router Lab, chuyển qua tab Interfaces, chọn Add Interface và thiết lập như sau:
 ![image](https://user-images.githubusercontent.com/41882267/90050394-512f1500-dd00-11ea-8868-ce873005f252.png)
 
-- Để tạo keypair, vào Project > Compute > Key Pairs > Create Key Pair
+- Để tạo keypair, vào Project > Compute > Key Pairs > Create Key Pair. Sau khi tạo xong ssh key, 
 ![image](https://user-images.githubusercontent.com/41882267/90050548-8cc9df00-dd00-11ea-8186-599c0e0f7f9f.png)
 
 - Để tạo flavor, vào Admin > Compute > Flavors > Create Flavor và thiết lập như sau:
 ![image](https://user-images.githubusercontent.com/41882267/90095347-941dd680-dd5a-11ea-9ea7-4cac89d80e9b.png)
 
-- Để tạo Image, vào Admin > Compute > Images > Create Image và thiết lập như sau:
+- Để tạo Image, vào Admin > Compute > Images > Create Image và thiết lập như sau. Lưu ý sử dụng cloud image.
 ![image](https://user-images.githubusercontent.com/41882267/90095583-49e92500-dd5b-11ea-9e89-754ab52ccf9e.png)
+
+## Hướng dẫn cài đặt và sử dụng gitlab cơ bản <a name="basic-setup-and-usage-gitlabce"></a>
+### Dựng Instance và cài đặt Gitlab-CE
 
 - Để tạo Instance, vào Project > Compute > Instances > Launch Instance
 ![image](https://user-images.githubusercontent.com/41882267/90098694-04305a80-dd63-11ea-946a-916566d4fe25.png)
@@ -144,5 +147,31 @@ nano /etc/netplan/01-netcfg.yaml
 ![image](https://user-images.githubusercontent.com/41882267/90098791-393cad00-dd63-11ea-8e63-0ac399aa5069.png)
 ![image](https://user-images.githubusercontent.com/41882267/90098935-96386300-dd63-11ea-82d9-689dc3dcf74e.png)
 ![image](https://user-images.githubusercontent.com/41882267/90098971-a3ede880-dd63-11ea-80c6-34cc6d1e7959.png)
+
+- Để instance có thể truy cập được từ network provider, cần phải gán cho nó 1 floating ip. Để gán floating ip cho một instance, ta làm như sau:
+![image](https://user-images.githubusercontent.com/41882267/90119356-a52f0d80-dd83-11ea-971f-741f58bac94c.png)
+
+- Chọn biểu tượng dấu "+" để tạo mới floating ip:
+![image](https://user-images.githubusercontent.com/41882267/90119403-b9730a80-dd83-11ea-8b63-7b05f23881dc.png)
+
+- Ở đây phải chọn provider-net là network provider của mình, sau đó chọn Allocate IP:
+![image](https://user-images.githubusercontent.com/41882267/90119593-f808c500-dd83-11ea-9d28-310ce595818e.png)
+
+- Sau đó chọn Associate
+![image](https://user-images.githubusercontent.com/41882267/90119768-30a89e80-dd84-11ea-85e0-534c925c5abb.png)
+
+- Sau khi instance hoàn tất cài đặt, ssh vào instance từ laptop bằng lệnh:
+```
+ssh -i <path/to/key> ubuntu@floatingip
+```
+![image](https://user-images.githubusercontent.com/41882267/90132696-796a5280-dd98-11ea-93bc-f5f49bc4d4e7.png)
+
+- 
+![image](https://user-images.githubusercontent.com/41882267/90134089-d36c1780-dd9a-11ea-9dc2-3b02ef7ee8ef.png)
+![image](https://user-images.githubusercontent.com/41882267/90134157-ee3e8c00-dd9a-11ea-9477-c6dfaf54cc99.png)
+![image](https://user-images.githubusercontent.com/41882267/90134173-f39bd680-dd9a-11ea-87bc-555a14381368.png)
+![image](https://user-images.githubusercontent.com/41882267/90134195-fdbdd500-dd9a-11ea-85fd-4565123285b3.png)
+![image](https://user-images.githubusercontent.com/41882267/90134130-e41c8d80-dd9a-11ea-9d6e-0b5b1aaaf6a1.png)
+![image](https://user-images.githubusercontent.com/41882267/90134241-129a6880-dd9b-11ea-81d3-aed853abf598.png)
 
 
