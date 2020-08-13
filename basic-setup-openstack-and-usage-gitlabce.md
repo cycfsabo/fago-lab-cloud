@@ -62,9 +62,11 @@ sử dụng lệnh:
 sudo nano -c /etc/apt/sources.list
 ```
 Sau đó comment dòng số 5 và lưu lại.
+
 ![image](https://user-images.githubusercontent.com/41882267/90046128-3b1e5600-dcfa-11ea-85a7-ad65d2b7414d.png)
 
 - Sau khi cài đặt xong, trên terminal sẽ có thông báo như sau:
+
 ![image](https://user-images.githubusercontent.com/41882267/90046341-89cbf000-dcfa-11ea-96ec-57a855573580.png)
 
 - Chuyển qua chế độ root, để thêm bridge, sử dụng lệnh:
@@ -87,9 +89,11 @@ nano /etc/neutron/plugins/ml2/ml2_conf.ini
 ![image](https://user-images.githubusercontent.com/41882267/90047704-8c2f4980-dcfc-11ea-8d1c-f1ca0df1bc3b.png)
 
 - Bên trong file ml2_conf.ini, để khai báo physical network, làm như sau:
+
 ![image](https://user-images.githubusercontent.com/41882267/90047840-c698e680-dcfc-11ea-96ae-b495feb9d1b1.png)
 
 - Bên trong file ml2_conf.ini, để nối physical network với bridge, làm như sau:
+
 ![image](https://user-images.githubusercontent.com/41882267/90047916-e5977880-dcfc-11ea-8682-1cbd066fcf85.png)
 
 sau đó lưu lại. 
