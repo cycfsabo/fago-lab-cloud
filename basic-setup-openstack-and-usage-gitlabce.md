@@ -171,7 +171,7 @@ ssh -i <path/to/key> ubuntu@floatingip
 ![image](https://user-images.githubusercontent.com/41882267/90134157-ee3e8c00-dd9a-11ea-9477-c6dfaf54cc99.png)
 ![image](https://user-images.githubusercontent.com/41882267/90134173-f39bd680-dd9a-11ea-87bc-555a14381368.png)
 ![image](https://user-images.githubusercontent.com/41882267/90134195-fdbdd500-dd9a-11ea-85fd-4565123285b3.png)
-![image](https://user-images.githubusercontent.com/41882267/90134130-e41c8d80-dd9a-11ea-9d6e-0b5b1aaaf6a1.png)
+![image](https://user-images.githubusercontent.com/41882267/90136315-2f846b00-dd9e-11ea-8b32-11280dec394b.png)
 ![image](https://user-images.githubusercontent.com/41882267/90134241-129a6880-dd9b-11ea-81d3-aed853abf598.png)
 
 
