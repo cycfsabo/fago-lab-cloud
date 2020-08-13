@@ -10,7 +10,7 @@
 
 Chuẩn bị phần mềm VMWare
 <br/>
-4 core CPU, 8,5gb RAM
+4 core CPU và 8,5gb RAM
 <br/>
 70gb ổ cứng
 <br/>
@@ -22,7 +22,6 @@ Chuẩn bị phần mềm VMWare
 <br/>
 Image Ubuntu 64-bit server 18.04.4
 <br/>
-
 Sau khi cài đặt xong máy ảo Ubuntu 18.04, bật tất cả card mạng lên.
 
 
