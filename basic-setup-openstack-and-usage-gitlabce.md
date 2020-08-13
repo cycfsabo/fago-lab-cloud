@@ -138,29 +138,36 @@ Chuyển qua project là admin.
 ![image](https://user-images.githubusercontent.com/41882267/90050015-d403a000-dcff-11ea-97bc-df086703cd4d.png)
 
 - Để tạo router, truy cập vào Project > Network > Routers > Create Router và thiết lập như sau:
+
 ![image](https://user-images.githubusercontent.com/41882267/90172688-940aee80-ddcd-11ea-8277-bb7066892809.png)
 
 - Để thêm interface của private network vào router Lab vừa tạo, chọn router Lab, chuyển qua tab Interfaces, chọn Add Interface và thiết lập như sau:
+
 ![image](https://user-images.githubusercontent.com/41882267/90172819-bef54280-ddcd-11ea-9df2-61ff358ddd1d.png)
 
 - Để tạo keypair, vào Project > Compute > Key Pairs > Create Key Pair. Sau khi tạo xong ssh key, trình duyệt sẽ tự động tải về file key dùng để ssh.
+
 ![image](https://user-images.githubusercontent.com/41882267/90172757-a6852800-ddcd-11ea-91e3-3ad569e15d15.png)
 
 - Để tạo flavor, vào Admin > Compute > Flavors > Create Flavor và thiết lập như sau:
+
 ![image](https://user-images.githubusercontent.com/41882267/90095347-941dd680-dd5a-11ea-9ea7-4cac89d80e9b.png)
 
 - Để tạo Image, vào Admin > Compute > Images > Create Image và thiết lập như sau. Lưu ý sử dụng cloud image như trên trang chủ khuyến cáo.
+
 ![image](https://user-images.githubusercontent.com/41882267/90095583-49e92500-dd5b-11ea-9e89-754ab52ccf9e.png)
 
 ## Hướng dẫn cài đặt và sử dụng cơ bản Gitlab-CE <a name="basic-setup-and-usage-gitlabce"></a>
 ### Dựng instance và cài đặt Gitlab-CE
 
 - Để tạo Instance, vào Project > Compute > Instances > Launch Instance
+
 ![image](https://user-images.githubusercontent.com/41882267/90098694-04305a80-dd63-11ea-946a-916566d4fe25.png)
 
 ![image](https://user-images.githubusercontent.com/41882267/90098744-1f02cf00-dd63-11ea-9f93-c3bccad9f0fb.png)
 
 "test2" là flavor tự tạo có các giá trị phù hơp để instance có thể chạy Gitlab-CE
+
 ![image](https://user-images.githubusercontent.com/41882267/90098775-2b872780-dd63-11ea-9806-829fd85d10cb.png)
 
 ![image](https://user-images.githubusercontent.com/41882267/90098791-393cad00-dd63-11ea-8e63-0ac399aa5069.png)
@@ -174,12 +181,15 @@ Chuyển qua project là admin.
 ![image](https://user-images.githubusercontent.com/41882267/90119356-a52f0d80-dd83-11ea-971f-741f58bac94c.png)
 
 - Chọn biểu tượng dấu "+" để tạo mới floating ip:
+
 ![image](https://user-images.githubusercontent.com/41882267/90119403-b9730a80-dd83-11ea-8b63-7b05f23881dc.png)
 
 - Ở đây chọn provider-net, sau đó chọn Allocate IP:
+
 ![image](https://user-images.githubusercontent.com/41882267/90119593-f808c500-dd83-11ea-9d28-310ce595818e.png)
 
 - Sau đó chọn Associate
+
 ![image](https://user-images.githubusercontent.com/41882267/90119768-30a89e80-dd84-11ea-85e0-534c925c5abb.png)
 
 - Sau khi instance hoàn tất cài đặt, ssh vào instance từ laptop bằng lệnh:
@@ -200,12 +210,16 @@ apt-get install openssh-server postfix -y
 ![image](https://user-images.githubusercontent.com/41882267/90136771-e2ed5f80-dd9e-11ea-9095-9b69001fd89a.png)
 
 - Chọn OK:
+
 ![image](https://user-images.githubusercontent.com/41882267/90134157-ee3e8c00-dd9a-11ea-9477-c6dfaf54cc99.png)
 
+
 - Chọn Internet Site:
+
 ![image](https://user-images.githubusercontent.com/41882267/90173882-4a230800-ddcf-11ea-836b-fda01343105d.png)
 
 - System mail name là www.labcloud.com:
+
 ![image](https://user-images.githubusercontent.com/41882267/90173933-632bb900-ddcf-11ea-97df-7401f11ac3bf.png)
 
 - Tải về package cài đặt gitlab-ce 10.5.7 bằng lệnh:
