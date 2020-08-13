@@ -4,7 +4,7 @@
 
 
 1. [Cài đặt OpenStack](#setup)
-1. [Hướng dẫn sử dụng cơ bản Gitlab-CE](#basic-setup-and-usage-gitlabce)
+1. [Hướng dẫn cài đặt và sử dụng gitlab cơ bản Gitlab-CE](#basic-setup-and-usage-gitlabce)
 
 ## Cài đặt OpenStack <a name="setup"></a>
 
@@ -137,8 +137,8 @@ nano /etc/netplan/01-netcfg.yaml
 - Để tạo Image, vào Admin > Compute > Images > Create Image và thiết lập như sau. Lưu ý sử dụng cloud image.
 ![image](https://user-images.githubusercontent.com/41882267/90095583-49e92500-dd5b-11ea-9e89-754ab52ccf9e.png)
 
-## Hướng dẫn cài đặt và sử dụng gitlab cơ bản <a name="basic-setup-and-usage-gitlabce"></a>
-### Dựng Instance và cài đặt Gitlab-CE
+## Hướng dẫn cài đặt và sử dụng cơ bản Gitlab-CE <a name="basic-setup-and-usage-gitlabce"></a>
+### Dựng instance và cài đặt Gitlab-CE
 
 - Để tạo Instance, vào Project > Compute > Instances > Launch Instance
 ![image](https://user-images.githubusercontent.com/41882267/90098694-04305a80-dd63-11ea-946a-916566d4fe25.png)
