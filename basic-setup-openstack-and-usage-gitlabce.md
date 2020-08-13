@@ -7,8 +7,8 @@
 1. [Hướng dẫn cài đặt và sử dụng gitlab cơ bản Gitlab-CE](#basic-setup-and-usage-gitlabce)
 
 ## Cài đặt OpenStack <a name="setup"></a>
-
-Chuẩn bị phần mềm VMWare
+### Chuẩn bị
+Phần mềm VMWare
 <br/>
 4 core CPU và 8,5gb RAM
 <br/>
@@ -24,7 +24,7 @@ Image Ubuntu 64-bit server 18.04.4
 <br/>
 Sau khi cài đặt xong máy ảo Ubuntu 18.04, bật tất cả card mạng lên.
 
-
+### Cài đặt
 - Thêm user stack 
 ```
 sudo useradd -s /bin/bash -d /opt/stack -m stack
