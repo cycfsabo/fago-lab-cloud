@@ -194,7 +194,8 @@ apt-get install openssh-server postfix -y
 ```
 wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/ubuntu/xenial/gitlab-ce_10.5.7-ce.0_amd64.deb/download.deb
 ```
-![image](https://user-images.githubusercontent.com/41882267/90136315-2f846b00-dd9e-11ea-8b32-11280dec394b.png)
+![image](https://user-images.githubusercontent.com/41882267/90171540-db907b00-ddcb-11ea-8e08-43dd02c9b57c.png)
+
 
 - Cài đặt gitlab-ce bằng lệnh:
 ```
