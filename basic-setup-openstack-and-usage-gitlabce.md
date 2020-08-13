@@ -48,6 +48,7 @@ nano local.conf
 ![image](https://user-images.githubusercontent.com/41882267/90045902-e2e75400-dcf9-11ea-88d0-a5d91f85c2f4.png)
 
 - File local.conf có nội dung như sau. Lưu ý, Host_IP là địa chỉ ip gắn trên card host-only
+<br/>
 ![image](https://user-images.githubusercontent.com/41882267/90046059-1cb85a80-dcfa-11ea-8a37-b58be025ea4d.png)
 
 - Để bắt đầu cài đặt, sử dụng lệnh:
