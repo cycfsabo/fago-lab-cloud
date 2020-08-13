@@ -131,4 +131,18 @@ nano /etc/netplan/01-netcfg.yaml
 - Để tạo keypair, vào Project > Compute > Key Pairs > Create Key Pair
 ![image](https://user-images.githubusercontent.com/41882267/90050548-8cc9df00-dd00-11ea-8186-599c0e0f7f9f.png)
 
+- Để tạo flavor, vào Admin > Compute > Flavors > Create Flavor và thiết lập như sau:
+![image](https://user-images.githubusercontent.com/41882267/90095347-941dd680-dd5a-11ea-9ea7-4cac89d80e9b.png)
+
+- Để tạo Image, vào Admin > Compute > Images > Create Image và thiết lập như sau:
+![image](https://user-images.githubusercontent.com/41882267/90095583-49e92500-dd5b-11ea-9e89-754ab52ccf9e.png)
+
+- Để tạo Instance, vào Project > Compute > Instances > Launch Instance
+![image](https://user-images.githubusercontent.com/41882267/90098694-04305a80-dd63-11ea-946a-916566d4fe25.png)
+![image](https://user-images.githubusercontent.com/41882267/90098744-1f02cf00-dd63-11ea-9f93-c3bccad9f0fb.png)
+![image](https://user-images.githubusercontent.com/41882267/90098775-2b872780-dd63-11ea-9806-829fd85d10cb.png)
+![image](https://user-images.githubusercontent.com/41882267/90098791-393cad00-dd63-11ea-8e63-0ac399aa5069.png)
+![image](https://user-images.githubusercontent.com/41882267/90098935-96386300-dd63-11ea-82d9-689dc3dcf74e.png)
+![image](https://user-images.githubusercontent.com/41882267/90098971-a3ede880-dd63-11ea-80c6-34cc6d1e7959.png)
+
 
