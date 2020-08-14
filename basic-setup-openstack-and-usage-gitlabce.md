@@ -377,11 +377,11 @@ git add Readme.md
 ```
 git commit -m "add Readme"
 ```
-- Đẩy file Readme.md đên branch master bằng lệnh:
+- Đẩy file Readme.md lên branch master bằng lệnh:
 ```
 git push -u origin master
 ```
-Và nhập username: root/password: 12345678 (do mình set từ lần đầu đăng nhập gitlab-ce)
+Và nhập username: root / password: 12345678 (do mình set từ lần đầu đăng nhập gitlab-ce)
 
 ![image](https://user-images.githubusercontent.com/41882267/90230710-2b128d80-de44-11ea-8134-0bdd6fd19de3.png)
 
@@ -397,7 +397,7 @@ git pull origin master
 nano Readme.md
 touch install.sh
 ```
-- Thực hiện các lệnh sau để push:
+- Thực hiện các lệnh sau để push lên branch master:
 ```
 git add *
 git commit -m "Update Readme and create install.sh"
@@ -415,7 +415,7 @@ git checkout -b hungch
 ```
 ![image](https://user-images.githubusercontent.com/41882267/90233951-184e8780-de49-11ea-9f23-815575c41a25.png)
 
-- Thay đổi nội dunng file Readme.md và push lên branch hungch.:
+- Thay đổi nội dung file Readme.md và push lên branch hungch.:
 ```
 nano Readme.md 
 git add *
