@@ -79,7 +79,7 @@ Sau đó comment dòng số 5 và lưu lại.
 - Chuyển qua chế độ root, để thêm bridge br-providernet, sử dụng lệnh:
 ```
 sudo su
-ovs-vsctl ađ-br br-providernet
+ovs-vsctl add-br br-providernet
 ```
 ![image](https://user-images.githubusercontent.com/41882267/90047381-06130300-dcfc-11ea-8d01-564fd73ab50e.png)
 
@@ -169,15 +169,15 @@ Chuyển qua project tên admin.
 
 - Truy cập Project > Network > Security Groups, chọn Manage Rules security group default và thiết lập như sau:
 
-Thêm rule để có thể ping instance:
+Thêm rule All ICMP để có thể ping instance:
 
 ![image](https://user-images.githubusercontent.com/41882267/90214971-7452e500-de24-11ea-9ae0-81d33fbb31ff.png)
 
-Thêm rule để có thể ssh instance:
+Thêm rule SSH để có thể ssh instance:
 
 ![image](https://user-images.githubusercontent.com/41882267/90214987-7f0d7a00-de24-11ea-80db-0c7054a1f04d.png)
 
-Thêm rule để có thể truy cập web host bởi instance:
+Thêm rule HTTP và HTTPS để có thể truy cập web host bởi instance:
 
 ![image](https://user-images.githubusercontent.com/41882267/90214998-86348800-de24-11ea-94d9-1e4bf2fa4eb7.png)
 
@@ -375,6 +375,7 @@ Và nhập username: root/password: 12345678 (do mình set từ lần đầu đ�
 ```
 git pull origin master
 ```
+
 ![image](https://user-images.githubusercontent.com/41882267/90230863-64e39400-de44-11ea-83ba-f106c8d2cf15.
 
 - Thay đổi nội dung file Readme.md và tạo thêm file install.sh:
