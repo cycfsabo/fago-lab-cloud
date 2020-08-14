@@ -4,13 +4,13 @@
 
 
 1. [Cài đặt OpenStack](#setup_op)
-    1. [Chuẩn bị] (#prepare)
-    1. [Cài đặt] (#setup)
-    1. [Thiết lập network trên node] (#network_node)
-    1. [Thiết lập network trên horizon] (#network_horizon)
+    1. [Chuẩn bị](#prepare)
+    1. [Cài đặt](#setup)
+    1. [Thiết lập network trên node](#network_node)
+    1. [Thiết lập network trên horizon](#network_horizon)
 1. [Hướng dẫn cài đặt và sử dụng cơ bản Gitlab-CE](#basic-setup-and-usage-gitlabce)
-    1. [Dựng instance và cài đặt Gitlab-CE] (#basic-setup-gitlabce)
-    2. [Hướng dẫn sử dụng cơ bản Gitlab-CE] (#basic-usage-gitlabce)
+    1. [Dựng instance và cài đặt Gitlab-CE](#basic-setup-gitlabce)
+    2. [Hướng dẫn sử dụng cơ bản Gitlab-CE](#basic-usage-gitlabce)
 
 ## Cài đặt OpenStack <a name="setup_op"></a>
 ### Chuẩn bị <a name="prepare"></a>
