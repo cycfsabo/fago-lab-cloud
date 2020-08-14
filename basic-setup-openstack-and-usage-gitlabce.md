@@ -141,7 +141,14 @@ Chuyển qua project tên admin.
 ![image](https://user-images.githubusercontent.com/41882267/90095583-49e92500-dd5b-11ea-9e89-754ab52ccf9e.png)
 
 ### Thiết lập network trên horizon: <a name="network_horizon"></a>
-Ở đây chúng ta sử dụng mô hình network provider.
+Ở đây chúng ta sử dụng mô hình network provider. Mô hình có dạng như sau:
+
+![image](https://user-images.githubusercontent.com/41882267/90256672-3e3b5280-de70-11ea-96d7-2030b0848446.png)
+
+- gitlab là tên Instance sẽ được cài đặt GitLab CE.
+- gitlab nối trực tiếp với private-net.
+- Router Lab nối private-net với provider-net.
+
 <br/>
 Để tạo private network cùng với subnet, truy cập theo Project > Network > Networks > Create Network và thiết lập như sau:
 
