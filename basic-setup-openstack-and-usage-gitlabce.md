@@ -25,7 +25,7 @@ DISK: 70 GB
 <br/>
 2 Network Adapter. Trong đó:
 - 1 Network Adapter NAT (ens33) dùng để đi ra ngoài internet
-- 1 Network Adapter Host-only (Private) (ens34) dùng để host OpenStack
+- 1 Network Adapter Private (ens34) dùng để host OpenStack
 Image Ubuntu 64-bit server 18.04.4
 <br/>
 Sau khi cài đặt xong máy ảo Ubuntu 18.04, bật tất cả network interface.
@@ -53,7 +53,7 @@ nano local.conf
 ```
 ![image](https://user-images.githubusercontent.com/41882267/90045902-e2e75400-dcf9-11ea-88d0-a5d91f85c2f4.png)
 
-- File local.conf có nội dung như sau. Lưu ý, Host_IP là địa chỉ ip gắn trên card host-only
+- File local.conf có nội dung như sau. Lưu ý, Host_IP là địa chỉ ip gắn trên card private
 
 ![image](https://user-images.githubusercontent.com/41882267/90046059-1cb85a80-dcfa-11ea-8a37-b58be025ea4d.png)
 
