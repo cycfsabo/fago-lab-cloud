@@ -6,8 +6,11 @@
 1. [Cài đặt OpenStack](#setup)
     1. Chuẩn bị
     1. Cài đặt
+    1. Thiết lập network trên node:
+    1. Thiết lập network trên horizon:
 1. [Hướng dẫn cài đặt và sử dụng gitlab cơ bản Gitlab-CE](#basic-setup-and-usage-gitlabce)
-    
+    1. Dựng instance và cài đặt Gitlab-CE
+    2. Hướng dẫn sử dụng cơ bản Gitlab-CE:
 
 ## Cài đặt OpenStack <a name="setup"></a>
 ### Chuẩn bị
@@ -303,7 +306,7 @@ gitlab-ctl status
 
 ![image](https://user-images.githubusercontent.com/41882267/90143238-90647100-dda7-11ea-8598-b8086c4a16b0.png)
 
-### Hướng dẫn sử dụng cơ bản gitlab-ce:
+### Hướng dẫn sử dụng cơ bản Gitlab-CE:
 
 - Kiểm tra version git:
 ```
