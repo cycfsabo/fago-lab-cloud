@@ -167,6 +167,8 @@ Chuyển qua project tên admin.
 
 ![image](https://user-images.githubusercontent.com/41882267/90172304-029b7c80-ddcd-11ea-8ead-f50cf98e0218.png)
 
+- Lưu ý gateway phải trùng với gateway được set ở file 01-netcfg.yaml:
+
 ![image](https://user-images.githubusercontent.com/41882267/90050003-d0701900-dcff-11ea-904c-c5b8be161196.png)
 
 ![image](https://user-images.githubusercontent.com/41882267/90050015-d403a000-dcff-11ea-97bc-df086703cd4d.png)
