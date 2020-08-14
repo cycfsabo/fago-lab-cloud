@@ -1,19 +1,19 @@
-# Hướng dẫn cài đặt OpenStack bằng devstack và sử dụng cơ bản Gitlab-CE
+# Hướng dẫn cài đặt OpenStack bằng DevStack và sử dụng cơ bản Gitlab-CE
 
 ## Mục lục
 
 
-1. [Cài đặt OpenStack](#setup)
-    1. Chuẩn bị
-    1. Cài đặt
-    1. Thiết lập network trên node:
-    1. Thiết lập network trên horizon:
-1. [Hướng dẫn cài đặt và sử dụng gitlab cơ bản Gitlab-CE](#basic-setup-and-usage-gitlabce)
-    1. Dựng instance và cài đặt Gitlab-CE
-    2. Hướng dẫn sử dụng cơ bản Gitlab-CE:
+1. [Cài đặt OpenStack](#setup_op)
+    1. Chuẩn bị (#prepare)
+    1. Cài đặt (#setup)
+    1. Thiết lập network trên node(#network_node)
+    1. Thiết lập network trên horizon(#network_horizon)
+1. [Hướng dẫn cài đặt và sử dụng cơ bản Gitlab-CE](#basic-setup-and-usage-gitlabce)
+    1. Dựng instance và cài đặt Gitlab-CE (#basic-setup-gitlabce)
+    2. Hướng dẫn sử dụng cơ bản Gitlab-CE (#basic-usage-gitlabce)
 
-## Cài đặt OpenStack <a name="setup"></a>
-### Chuẩn bị
+## Cài đặt OpenStack <a name="setup_op"></a>
+### Chuẩn bị <a name="prepare"></a>
 Phần mềm VMWare
 <br/>
 4 cores CPU và 8,5 gb RAM
@@ -30,7 +30,7 @@ Image Ubuntu 64-bit server 18.04.4
 <br/>
 Sau khi cài đặt xong máy ảo Ubuntu 18.04, bật tất cả network interface.
 
-### Cài đặt
+### Cài đặt <a name="setup"></a>
 - Thêm user stack 
 ```
 sudo useradd -s /bin/bash -d /opt/stack -m stack
@@ -75,7 +75,7 @@ Sau đó comment dòng số 5 và lưu lại.
 
 ![image](https://user-images.githubusercontent.com/41882267/90046341-89cbf000-dcfa-11ea-96ec-57a855573580.png)
 
-### Thiết lập network trên node:
+### Thiết lập network trên node:<a name="network_node"></a>
 - Chuyển qua chế độ root, để thêm bridge br-providernet, sử dụng lệnh:
 ```
 sudo su
@@ -140,7 +140,7 @@ Chuyển qua project tên admin.
 
 ![image](https://user-images.githubusercontent.com/41882267/90095583-49e92500-dd5b-11ea-9e89-754ab52ccf9e.png)
 
-### Thiết lập network trên horizon: 
+### Thiết lập network trên horizon: <a name="network_horizon"></a>
 Ở đây chúng ta sử dụng mô hình network provider.
 <br/>
 Để tạo private network cùng với subnet, truy cập theo Project > Network > Networks > Create Network và thiết lập như sau:
@@ -189,7 +189,7 @@ Kết quả:
 
 
 ## Hướng dẫn cài đặt và sử dụng cơ bản Gitlab-CE <a name="basic-setup-and-usage-gitlabce"></a>
-### Dựng instance và cài đặt Gitlab-CE
+### Dựng instance và cài đặt Gitlab-CE <a name="basic-setup-gitlabce"></a>
 
 - Để tạo Instance, vào Project > Compute > Instances > Launch Instance
 
@@ -306,7 +306,7 @@ gitlab-ctl status
 
 ![image](https://user-images.githubusercontent.com/41882267/90143238-90647100-dda7-11ea-8598-b8086c4a16b0.png)
 
-### Hướng dẫn sử dụng cơ bản Gitlab-CE:
+### Hướng dẫn sử dụng cơ bản Gitlab-CE <a name="basic-usage-gitlabce"></a>
 
 - Kiểm tra version git:
 ```
