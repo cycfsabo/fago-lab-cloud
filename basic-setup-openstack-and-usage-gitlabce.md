@@ -16,9 +16,11 @@
 ### Chuẩn bị <a name="prepare"></a>
 Phần mềm VMWare
 <br/>
-4 cores CPU và 8,5 gb RAM
+CPU: 4 vCPU
 <br/>
-70 gb ổ cứng
+RAM: 8572 MB
+<br/>
+DISK: 70 GB
 <br/>
 2 Network Adapter. Trong đó:
 <br/>
