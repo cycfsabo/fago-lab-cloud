@@ -23,11 +23,8 @@ RAM: 8572 MB
 DISK: 70 GB
 <br/>
 2 Network Adapter. Trong đó:
-<br/>
-1 Network Adapter NAT (ens33) dùng để đi ra ngoài internet
-<br/>
-1 Network Adapter Host-only (Private) (ens34) dùng để host OpenStack
-<br/>
+- 1 Network Adapter NAT (ens33) dùng để đi ra ngoài internet
+- 1 Network Adapter Host-only (Private) (ens34) dùng để host OpenStack
 Image Ubuntu 64-bit server 18.04.4
 <br/>
 Sau khi cài đặt xong máy ảo Ubuntu 18.04, bật tất cả network interface.
