@@ -1,4 +1,4 @@
-# Hướng dẫn cài đặt OpenStack bằng DevStack và sử dụng cơ bản Gitlab-CE
+# Hướng dẫn cài đặt OpenStack bằng DevStack và sử dụng cơ bản GitLab CE
 
 ## Mục lục
 
@@ -8,9 +8,9 @@
     1. [Cài đặt](#setup)
     1. [Thiết lập network trên node](#network_node)
     1. [Thiết lập network trên horizon](#network_horizon)
-1. [Hướng dẫn cài đặt và sử dụng cơ bản Gitlab-CE](#basic-setup-and-usage-gitlabce)
-    1. [Dựng instance và cài đặt Gitlab-CE](#basic-setup-gitlabce)
-    2. [Hướng dẫn sử dụng cơ bản Gitlab-CE](#basic-usage-gitlabce)
+1. [Hướng dẫn cài đặt và sử dụng cơ bản GitLab CE](#basic-setup-and-usage-gitlabce)
+    1. [Dựng instance và cài đặt GitLab CE](#basic-setup-gitlabce)
+    2. [Hướng dẫn sử dụng cơ bản GitLab CE](#basic-usage-gitlabce)
 
 ## Cài đặt OpenStack <a name="setup_op"></a>
 ### Chuẩn bị <a name="prepare"></a>
@@ -188,8 +188,8 @@ Kết quả:
 ![image](https://user-images.githubusercontent.com/41882267/90214948-5d13f780-de24-11ea-843a-b18b7de3400b.png)
 
 
-## Hướng dẫn cài đặt và sử dụng cơ bản Gitlab-CE <a name="basic-setup-and-usage-gitlabce"></a>
-### Dựng instance và cài đặt Gitlab-CE <a name="basic-setup-gitlabce"></a>
+## Hướng dẫn cài đặt và sử dụng cơ bản GitLab CE <a name="basic-setup-and-usage-gitlabce"></a>
+### Dựng instance và cài đặt GitLab CE <a name="basic-setup-gitlabce"></a>
 
 - Để tạo Instance, vào Project > Compute > Instances > Launch Instance
 
@@ -197,7 +197,7 @@ Kết quả:
 
 ![image](https://user-images.githubusercontent.com/41882267/90098744-1f02cf00-dd63-11ea-9f93-c3bccad9f0fb.png)
 
-"test2" là flavor tự tạo có các giá trị phù hơp để instance có thể chạy Gitlab-CE
+"test2" là flavor tự tạo có các giá trị phù hơp để instance có thể chạy GitLab-CE
 
 ![image](https://user-images.githubusercontent.com/41882267/90098775-2b872780-dd63-11ea-9806-829fd85d10cb.png)
 
@@ -253,14 +253,14 @@ apt-get install openssh-server postfix -y
 
 ![image](https://user-images.githubusercontent.com/41882267/90173933-632bb900-ddcf-11ea-97df-7401f11ac3bf.png)
 
-- Tải về package cài đặt gitlab-ce 10.5.7 bằng lệnh:
+- Tải về package cài đặt GitLab CE 10.5.7 bằng lệnh:
 ```
 wget --content-disposition https://packages.gitlab.com/gitlab/gitlab-ce/packages/ubuntu/xenial/gitlab-ce_10.5.7-ce.0_amd64.deb/download.deb
 ```
 ![image](https://user-images.githubusercontent.com/41882267/90171540-db907b00-ddcb-11ea-8e08-43dd02c9b57c.png)
 
 
-- Cài đặt gitlab-ce bằng lệnh:
+- Cài đặt GitLab-CE bằng lệnh:
 ```
 dpkg -i gitlab-ce_10.5.7-ce.0_amd64.deb
 ```
@@ -282,7 +282,7 @@ Sửa dòng 1085:
 <br/>
 ![image](https://user-images.githubusercontent.com/41882267/90141237-10d5a280-dda5-11ea-9b6f-522b66389942.png)
 
-- Sau đó reconfig gitlab bằng lệnh:
+- Sau đó reconfig GitLab bằng lệnh:
 ```
 gitlab-ctl reconfigure
 ```
@@ -306,7 +306,7 @@ gitlab-ctl status
 
 ![image](https://user-images.githubusercontent.com/41882267/90143238-90647100-dda7-11ea-8598-b8086c4a16b0.png)
 
-### Hướng dẫn sử dụng cơ bản Gitlab-CE <a name="basic-usage-gitlabce"></a>
+### Hướng dẫn sử dụng cơ bản GitLab-CE <a name="basic-usage-gitlabce"></a>
 
 - Kiểm tra version git:
 ```
@@ -391,7 +391,7 @@ git push -u origin master
 ```
 ![image](https://user-images.githubusercontent.com/41882267/90233613-9c543f80-de48-11ea-871e-c7b03fa85a00.png)
 
-- Lúc này, trên gitlab đã thay đổi:
+- Lúc này, trên GitLab đã thay đổi:
 
 ![image](https://user-images.githubusercontent.com/41882267/90233680-b4c45a00-de48-11ea-967a-71693a83e000.png)
 
