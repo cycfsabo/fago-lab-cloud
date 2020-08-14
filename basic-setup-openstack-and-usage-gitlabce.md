@@ -4,25 +4,28 @@
 
 
 1. [Cài đặt OpenStack](#setup)
+    1. Chuẩn bị
+    1. Cài đặt
 1. [Hướng dẫn cài đặt và sử dụng gitlab cơ bản Gitlab-CE](#basic-setup-and-usage-gitlabce)
+    
 
 ## Cài đặt OpenStack <a name="setup"></a>
 ### Chuẩn bị
 Phần mềm VMWare
 <br/>
-4 core CPU và 8,5gb RAM
+4 cores CPU và 8,5 gb RAM
 <br/>
-70gb ổ cứng
+70 gb ổ cứng
 <br/>
 2 Network Adapter. Trong đó:
 <br/>
-1 card NAT (ens33) dùng để gắn vào network provider
+1 Network Adapter NAT (ens33) dùng để đi ra ngoài internet
 <br/>
-1 card Host-only (ens34) dùng để host openstack
+1 Network Adapter Host-only (Private) (ens34) dùng để host OpenStack
 <br/>
 Image Ubuntu 64-bit server 18.04.4
 <br/>
-Sau khi cài đặt xong máy ảo Ubuntu 18.04, bật tất cả card mạng lên.
+Sau khi cài đặt xong máy ảo Ubuntu 18.04, bật tất cả network interface.
 
 ### Cài đặt
 - Thêm user stack 
@@ -34,7 +37,7 @@ sudo useradd -s /bin/bash -d /opt/stack -m stack
 echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
 sudo su - stack
 ```
-- Download DevStack với --branch stable/version để chọn phiên bản:
+- Download DevStack với --branch stable/(version) để chọn phiên bản:
 ```
 git clone https://git.openstack.org/openstack-dev/devstack --branch stable/train
 ```
@@ -69,6 +72,7 @@ Sau đó comment dòng số 5 và lưu lại.
 
 ![image](https://user-images.githubusercontent.com/41882267/90046341-89cbf000-dcfa-11ea-96ec-57a855573580.png)
 
+### Thiết lập network trên node:
 - Chuyển qua chế độ root, để thêm bridge br-providernet, sử dụng lệnh:
 ```
 sudo su
@@ -133,7 +137,9 @@ Chuyển qua project tên admin.
 
 ![image](https://user-images.githubusercontent.com/41882267/90095583-49e92500-dd5b-11ea-9e89-754ab52ccf9e.png)
 
-### Thiết lập network:
+### Thiết lập network trên horizon: 
+Ở đây chúng ta sử dụng mô hình network provider.
+<br/>
 Để tạo private network cùng với subnet, truy cập theo Project > Network > Networks > Create Network và thiết lập như sau:
 
 ![image](https://user-images.githubusercontent.com/41882267/90049742-74a59000-dcff-11ea-8b84-9695f410807f.png)
