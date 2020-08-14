@@ -343,6 +343,7 @@ git clone http://192.168.182.237/root/example1.git
 
 - Tạo file Readme.md bằng lệnh:
 ```
+cd example1
 touch Readme.md
 ```
 - Add file Readme.md bằng lệnh:
@@ -365,7 +366,51 @@ Và nhập username: root/password: 12345678 (do mình set từ lần đầu đ�
 ```
 git pull origin master
 ```
-![image](https://user-images.githubusercontent.com/41882267/90230863-64e39400-de44-11ea-83ba-f106c8d2cf15.png)
+![image](https://user-images.githubusercontent.com/41882267/90230863-64e39400-de44-11ea-83ba-f106c8d2cf15.
 
-- 
+- Thay đổi nội dung file Readme.md và tạo thêm file install.sh:
+```
+nano Readme.md
+touch install.sh
+```
+- Thực hiện các lệnh sau để push:
+```
+git add *
+git commit -m "Update Readme and create install.sh"
+git push -u origin master
+```
+![image](https://user-images.githubusercontent.com/41882267/90233613-9c543f80-de48-11ea-871e-c7b03fa85a00.png)
+
+- Lúc này, trên gitlab đã thay đổi:
+
+![image](https://user-images.githubusercontent.com/41882267/90233680-b4c45a00-de48-11ea-967a-71693a83e000.png)
+
+- Tạo branch mới và chuyển qua branch đó bằng lệnh:
+```
+git checkout -b hungch
+```
+![image](https://user-images.githubusercontent.com/41882267/90233951-184e8780-de49-11ea-9f23-815575c41a25.png)
+
+- Thay đổi nội dunng file Readme.md và push lên branch hungch.:
+```
+nano Readme.md 
+git add *
+git commit -m "update Readme hungch"
+git push -u origin hungch
+```
+![image](https://user-images.githubusercontent.com/41882267/90234229-8e52ee80-de49-11ea-89be-32e0a42b9c7f.png)
+
+- Truy cập vào đường link "http://192.168.182.237/root/example1/merge_requests/new?merge_request%5Bsource_branch%5D=hungch" dùng để tạo merge request:
+
+![image](https://user-images.githubusercontent.com/41882267/90236079-77fa6200-de4c-11ea-83bf-b2b1f0fd6eff.png)
+
+- Chọn merge để merge request từ branch hungch vào branch master:
+
+![image](https://user-images.githubusercontent.com/41882267/90236296-c1e34800-de4c-11ea-8d43-164e9a48e1f6.png)
+
+- Quay trở lại file để kiểm tra thay đổi:
+
+![image](https://user-images.githubusercontent.com/41882267/90236529-125aa580-de4d-11ea-98f7-a4872238e1c6.png)
+
+
 
