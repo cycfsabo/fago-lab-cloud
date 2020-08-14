@@ -121,6 +121,19 @@ nano /etc/netplan/01-netcfg.yaml
 <br/>
 Chuyển qua project tên admin.
 <br/>
+- Để tạo keypair, vào Project > Compute > Key Pairs > Create Key Pair. Sau khi tạo xong ssh key, trình duyệt sẽ tự động tải về file key dùng để ssh.
+
+![image](https://user-images.githubusercontent.com/41882267/90172757-a6852800-ddcd-11ea-91e3-3ad569e15d15.png)
+
+- Để tạo flavor, vào Admin > Compute > Flavors > Create Flavor và thiết lập như sau:
+
+![image](https://user-images.githubusercontent.com/41882267/90095347-941dd680-dd5a-11ea-9ea7-4cac89d80e9b.png)
+
+- Để tạo Image, vào Admin > Compute > Images > Create Image và thiết lập như sau. Lưu ý sử dụng cloud image như trên trang chủ khuyến cáo.
+
+![image](https://user-images.githubusercontent.com/41882267/90095583-49e92500-dd5b-11ea-9e89-754ab52ccf9e.png)
+
+### Thiết lập network:
 Để tạo private network cùng với subnet, truy cập theo Project > Network > Networks > Create Network và thiết lập như sau:
 
 ![image](https://user-images.githubusercontent.com/41882267/90049742-74a59000-dcff-11ea-8b84-9695f410807f.png)
@@ -145,17 +158,8 @@ Chuyển qua project tên admin.
 
 ![image](https://user-images.githubusercontent.com/41882267/90172819-bef54280-ddcd-11ea-9df2-61ff358ddd1d.png)
 
-- Để tạo keypair, vào Project > Compute > Key Pairs > Create Key Pair. Sau khi tạo xong ssh key, trình duyệt sẽ tự động tải về file key dùng để ssh.
+- Thiết lập security group như sau:
 
-![image](https://user-images.githubusercontent.com/41882267/90172757-a6852800-ddcd-11ea-91e3-3ad569e15d15.png)
-
-- Để tạo flavor, vào Admin > Compute > Flavors > Create Flavor và thiết lập như sau:
-
-![image](https://user-images.githubusercontent.com/41882267/90095347-941dd680-dd5a-11ea-9ea7-4cac89d80e9b.png)
-
-- Để tạo Image, vào Admin > Compute > Images > Create Image và thiết lập như sau. Lưu ý sử dụng cloud image như trên trang chủ khuyến cáo.
-
-![image](https://user-images.githubusercontent.com/41882267/90095583-49e92500-dd5b-11ea-9e89-754ab52ccf9e.png)
 
 ## Hướng dẫn cài đặt và sử dụng cơ bản Gitlab-CE <a name="basic-setup-and-usage-gitlabce"></a>
 ### Dựng instance và cài đặt Gitlab-CE
