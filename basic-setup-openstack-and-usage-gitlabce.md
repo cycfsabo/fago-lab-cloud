@@ -424,7 +424,7 @@ git push -u origin hungch
 ```
 ![image](https://user-images.githubusercontent.com/41882267/90234229-8e52ee80-de49-11ea-89be-32e0a42b9c7f.png)
 
-- Truy cập vào đường link "http://192.168.182.237/root/example1/merge_requests/new?merge_request%5Bsource_branch%5D=hungch" dùng để tạo merge request:
+- Truy cập vào đường link "http://192.168.182.237/root/example1/merge_requests/new?merge_request%5Bsource_branch%5D=hungch" mà hệ thống trả về sau khi push để tạo merge request:
 
 ![image](https://user-images.githubusercontent.com/41882267/90236079-77fa6200-de4c-11ea-83bf-b2b1f0fd6eff.png)
 
