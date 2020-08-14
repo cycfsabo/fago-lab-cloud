@@ -145,7 +145,8 @@ Chuyển qua project tên admin.
 
 ![image](https://user-images.githubusercontent.com/41882267/90256672-3e3b5280-de70-11ea-96d7-2030b0848446.png)
 
-- gitlab là tên Instance sẽ được cài đặt GitLab CE.
+- gitlab là instance sẽ được dùng để chạy GitLab CE.
+- network là một instance khác giống như gitlab.
 - gitlab nối trực tiếp với private-net.
 - Router Lab nối private-net với provider-net.
 
