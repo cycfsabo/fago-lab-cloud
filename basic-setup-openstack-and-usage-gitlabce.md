@@ -143,10 +143,9 @@ Chuyển qua project tên admin.
 ### Thiết lập network trên horizon: <a name="network_horizon"></a>
 Ở đây chúng ta sử dụng mô hình network provider. Mô hình có dạng như sau:
 
-![image](https://user-images.githubusercontent.com/41882267/90256672-3e3b5280-de70-11ea-96d7-2030b0848446.png)
+![image](https://user-images.githubusercontent.com/41882267/90257542-85761300-de71-11ea-82b5-fe29c6f7c899.png)
 
 - gitlab là instance sẽ được dùng để chạy GitLab CE.
-- network là một instance khác giống như gitlab.
 - gitlab nối trực tiếp với private-net.
 - Router Lab nối private-net với provider-net.
 
