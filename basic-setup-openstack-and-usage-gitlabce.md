@@ -7,6 +7,7 @@
     1. [Chuẩn bị](#prepare)
     1. [Cài đặt](#setup)
     1. [Thiết lập network trên node](#network_node)
+    1. [Tạo key pair, flavor, image](#create_etc)
     1. [Thiết lập network trên horizon](#network_horizon)
 1. [Hướng dẫn cài đặt và sử dụng cơ bản GitLab CE](#basic-setup-and-usage-gitlabce)
     1. [Dựng instance và cài đặt GitLab CE](#basic-setup-gitlabce)
@@ -127,7 +128,7 @@ nano /etc/netplan/01-netcfg.yaml
 ```
 netplan apply
 ```
-
+### Tạo key pair, flavor, image <a name="create_etc"></a>
 - Mở trình duyệt, truy cập vào địa chỉ 172.16.41.128 (địa chỉ host OpenStack) và đăng nhập với username: admin và password: 123456. 
 <br/>
 Chuyển qua project tên admin.
