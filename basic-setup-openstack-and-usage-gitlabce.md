@@ -299,4 +299,73 @@ gitlab-ctl status
 
 ### Hướng dẫn sử dụng cơ bản gitlab-ce:
 
+- Kiểm tra version git:
+```
+git --version
+```
+![image](https://user-images.githubusercontent.com/41882267/90227850-6d859b80-de3f-11ea-9d56-cb2061098865.png)
+
+- Thêm Git username "hungch" bằng lệnh:
+``
+git config --global user.name "hungch"
+``
+-  Kiểm tra username vừa thêm vào bằng lệnh:
+```
+git config --global user.name
+```
+![image](https://user-images.githubusercontent.com/41882267/90228039-c1908000-de3f-11ea-9702-febfdb4412da.png)
+
+-  Set email "huuhungf@gmail.com" bằng lệnh:
+```
+git config --global user.email "huuhungf@gmail.com"
+```
+- Kiểm tra email vừa thêm vào bằng lệnh:
+```
+git config --global user.email
+```
+![image](https://user-images.githubusercontent.com/41882267/90228187-fac8f000-de3f-11ea-9dfa-bde55f6dd633.png)
+
+- Kiểm tra các thông tin đã được thêm vào bằng lệnh:
+```
+git config --global --list
+```
+![image](https://user-images.githubusercontent.com/41882267/90228711-e46f6400-de40-11ea-9b81-4f9d25ab1332.png)
+
+- Mở trình duyệt, chọn Create a project và thiết lập như sau:
+
+![image](https://user-images.githubusercontent.com/41882267/90229965-fce07e00-de42-11ea-8be4-1b21a47ec712.png)
+
+- Clone project bằng lệnh:
+```
+git clone http://192.168.182.237/root/example1.git
+```
+![image](https://user-images.githubusercontent.com/41882267/90230158-4e890880-de43-11ea-931f-0749f1e5a5eb.png)
+
+- Tạo file Readme.md bằng lệnh:
+```
+touch Readme.md
+```
+- Add file Readme.md bằng lệnh:
+```
+git add Readme.md
+```
+- Commit bằng lệnh:
+```
+git commit -m "add Readme"
+```
+- Đẩy file Readme.md đên branch master bằng lệnh:
+```
+git push -u origin master
+```
+Và nhập username: root/password: 12345678 (do mình set từ lần đầu đăng nhập gitlab-ce)
+
+![image](https://user-images.githubusercontent.com/41882267/90230710-2b128d80-de44-11ea-8134-0bdd6fd19de3.png)
+
+- Thay đổi nội dung file Readme.md trên giao diện web, pull file mới về bằng lệnh:
+```
+git pull origin master
+```
+![image](https://user-images.githubusercontent.com/41882267/90230863-64e39400-de44-11ea-83ba-f106c8d2cf15.png)
+
+- 
 
