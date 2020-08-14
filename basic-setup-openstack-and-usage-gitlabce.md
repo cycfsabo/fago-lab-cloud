@@ -124,6 +124,11 @@ nano /etc/netplan/01-netcfg.yaml
 
 ![image](https://user-images.githubusercontent.com/41882267/90048676-090ef300-dcfe-11ea-9280-367bfe4092c1.png)
 
+- Để áp dụng cấu hình trong file 01-netcfg.yaml, sử dụng lệnh:
+```
+netplan apply
+```
+
 - Mở trình duyệt, truy cập vào địa chỉ 172.16.41.128 (địa chỉ host OpenStack) và đăng nhập với username: admin và password: 123456. 
 <br/>
 Chuyển qua project tên admin.
