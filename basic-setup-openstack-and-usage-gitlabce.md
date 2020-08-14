@@ -376,7 +376,7 @@ Và nhập username: root/password: 12345678 (do mình set từ lần đầu đ�
 git pull origin master
 ```
 
-![image](https://user-images.githubusercontent.com/41882267/90230863-64e39400-de44-11ea-83ba-f106c8d2cf15.
+![image](https://user-images.githubusercontent.com/41882267/90230863-64e39400-de44-11ea-83ba-f106c8d2cf15.png)
 
 - Thay đổi nội dung file Readme.md và tạo thêm file install.sh:
 ```
