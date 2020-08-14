@@ -119,7 +119,7 @@ nano /etc/netplan/01-netcfg.yaml
 
 - Mở trình duyệt, truy cập vào địa chỉ 172.16.41.128 (địa chỉ host OpenStack) và đăng nhập với username: admin và password: 123456. 
 <br/>
-Chuyển qua project là admin.
+Chuyển qua project tên admin.
 <br/>
 Để tạo private network cùng với subnet, truy cập theo Project > Network > Networks > Create Network và thiết lập như sau:
 
