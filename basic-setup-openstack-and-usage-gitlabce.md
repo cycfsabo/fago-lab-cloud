@@ -158,7 +158,21 @@ Chuyển qua project tên admin.
 
 ![image](https://user-images.githubusercontent.com/41882267/90172819-bef54280-ddcd-11ea-9df2-61ff358ddd1d.png)
 
-- Thiết lập security group như sau:
+- Truy cập Project > Network > Security Groups, chọn Manage Rules security group default và thiết lập như sau:
+
+Thêm rule để có thể ping instance:
+![image](https://user-images.githubusercontent.com/41882267/90214971-7452e500-de24-11ea-9ae0-81d33fbb31ff.png)
+
+Thêm rule để có thể ssh instance:
+![image](https://user-images.githubusercontent.com/41882267/90214987-7f0d7a00-de24-11ea-80db-0c7054a1f04d.png)
+
+Thêm rule để có thể truy cập web host bởi instance:
+![image](https://user-images.githubusercontent.com/41882267/90214998-86348800-de24-11ea-94d9-1e4bf2fa4eb7.png)
+
+![image](https://user-images.githubusercontent.com/41882267/90215013-9482a400-de24-11ea-8e62-4253bd2a6eb8.png)
+
+Kết quả:
+![image](https://user-images.githubusercontent.com/41882267/90214948-5d13f780-de24-11ea-843a-b18b7de3400b.png)
 
 
 ## Hướng dẫn cài đặt và sử dụng cơ bản Gitlab-CE <a name="basic-setup-and-usage-gitlabce"></a>
